@@ -1,3 +1,17 @@
-Ecommerce: An online backend system for handling storing and retrieving product info as well. It also include an add to cart feature.
-Anticounterfeit: Using public key cryptography to sign a fiducial marker.
-Fiducial Auth: An alternative to using qr code scanning. We can use fiducial markers for this. An added advantage is you can hide the marker behind a logo using steganography.
+# 🛒 E-Commerce Backend System
+
+## A robust online backend system designed to manage and streamline e-commerce operations.
+Key features include:
+
+📦 Product management — Store, update, and retrieve product information efficiently
+
+🛍️ Add-to-cart functionality — Allow seamless shopping cart operations for customers
+
+# 🔐 Anti-Counterfeit Module
+
+An innovative anti-counterfeiting mechanism that uses public-key cryptography to securely sign fiducial markers, ensuring authenticity and trust in products.
+
+# 🎯 Fiducial Auth (Authentication System)
+
+An alternative to traditional QR code scanning, Fiducial Auth leverages fiducial markers for authentication.
+✨ Bonus Advantage: The marker can be hidden behind a logo using steganography, adding a layer of discretion and design flexibility.
