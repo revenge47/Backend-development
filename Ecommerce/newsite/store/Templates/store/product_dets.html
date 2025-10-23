@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="jumbotron">
+  <h1>Welcome to the ff Detail Page</h1>
+  <h2>Details:</h2>
+  <p>Id_num: {{prod_dets.Product_id}}</p>
+  <p>Name: {{prod_dets.Product_name}}</p>
+
+  <form action="{% url "cartapp:cart_add" prod_dets.Product_id %}" method="post">
+  {{ form.as_p }}
+  {% csrf_token %}
+  <input type="submit" value="Add to cart">
+</form>
+
+
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <title></title>
+  </head>
+  <body>
+    <div class="jumbotron">
+
+  <h1>These are the products</h1>
+    <ol>
+      {% for product in product_list %}
+        <h2><li><a href="{{product.get_absolute_url}}">{{product.Product_name}} </a></li></h2>
+
+      {% endfor %}
+    </ol>
+
+
+</div>
+
+  </body>
+</html>

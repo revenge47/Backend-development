@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <title></title>
+  </head>
+  <body>
+    <div class="jumbotron">
+
+  <h1>These are the products</h1>
+    <ol>
+      {% for product in product %}
+        <h2><li><a href="{{product.get_absolute_url}}">{{product.Product_name}} </a></li></h2>
+
+      {% endfor %}
+    </ol>
+
+    <form action="{% url "cart:cart_add" product.Product_id %}" method="post">
+    {{ cart_product_form }}
+    {% csrf_token %}
+    <input type="submit" value="Add to cart">
+  </form>
+
+
+</div>
+
+  </body>
+</html>
